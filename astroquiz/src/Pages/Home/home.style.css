@@ -1,0 +1,18 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    height: 50vh;
+
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 1rem 2rem;
+    width: 100%;
+    flex: 0.8;
+    justify-content: space-evenly;
+}
+

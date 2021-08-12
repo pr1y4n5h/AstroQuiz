@@ -1,0 +1,32 @@
+.result-page {
+    display: flex;
+    justify-content: center;
+}
+
+.result-box {
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 60%;
+    margin-top: 3rem;
+    background-color: #dcdde1;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.quiz-options {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .result-box {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
