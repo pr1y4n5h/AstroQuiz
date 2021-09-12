@@ -10,7 +10,7 @@ import {Quiz} from "./Pages/Quiz/Quiz"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <main>
         <Routes>
