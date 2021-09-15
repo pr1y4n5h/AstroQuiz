@@ -1,22 +1,26 @@
-import React, { useState } from "react";
 import "./home.style.css";
-import { TextField, Button } from "@material-ui/core";
+import { useNavigate } from "react-router";
+import { Button } from "@material-ui/core";
 
 export const Home = () => {
+  const navigate = useNavigate();
+
+  const goToQuiz = () => {
+    navigate("/quiz");
+  };
 
   return (
-    <div className="homepage">
-      <div className="homepage-container">
-        <h1> Please Fill the details to continue </h1>
-        <TextField
-          style={{ marginBottom: "40" }}
-          label="Enter your name"
-          variant="outlined"
-        />
-        <Button variant="contained" color="secondary">
-            Start Quiz
-        </Button>
-      </div>
+    <div className="home-page">
+      <header>
+        <div className="header-content">
+          <h2> Show your Geeky side with</h2>
+          <div className="line"> </div>
+          <h1> AstroQuiz </h1>
+          <Button onClick={goToQuiz} variant="contained" color="secondary">
+            Let's Play
+          </Button>
+        </div>
+      </header>
     </div>
   );
 };

@@ -1,18 +1,45 @@
-.homepage {
+.home-page {
+    font-family: "Inter", sans-serif;
+  }
+  
+  header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/img.jpg");
+    background-position: bottom;
+    background-size: cover;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    border: 2px solid;
-    height: 50vh;
-
-}
-
-.homepage-container {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid;
-    padding: 1rem 2rem;
-    width: 100%;
-    flex: 0.8;
-    justify-content: space-evenly;
-}
-
+  }
+  
+  .header-content {
+    margin-bottom: 280px;
+    color: #efefef;
+    text-align: center;
+  }
+  
+  .header-content h2 {
+    font-size: 4vmin;
+  }
+  
+  .header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .line {
+    width: 180px;
+    height: 4px;
+    background: #efefef;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-content {
+      margin-bottom: 350px;
+    }
+  
+  }

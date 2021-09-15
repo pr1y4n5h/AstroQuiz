@@ -1,4 +1,3 @@
-import React from 'react'
 import { useQuiz } from '../../Contexts/QuizContext';
 import "./result.style.css";
 
@@ -7,7 +6,7 @@ export const Result = () => {
         state: { score, currentQuiz },
       } = useQuiz();
       return (
-        <div className="result-page">
+        <div className="flex justify-center">
           <div className="result-box">
             <p className="text-2xl mt-8 font-bold text-center">
               Your Final Score is <em> {score} out of {currentQuiz?.totalScore} </em>

@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import {Navbar} from "./Components/Navbar/Navbar";
 import {Footer} from "./Components/Footer/Footer";
@@ -15,8 +14,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/quizzes" element={<QuizDashboard />} />
-          <Route path="/quizzes/:quizId" element={<Quiz />} />
+          <Route path="/quiz" element={<QuizDashboard />} />
+          <Route path="/quiz/:quizId" element={<Quiz />} />
           <Route path="/result" element={<Result />} />
         </Routes>
       </main>

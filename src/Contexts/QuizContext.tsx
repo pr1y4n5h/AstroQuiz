@@ -29,8 +29,6 @@ export const QuizProvider: FunctionComponent = ({ children }) => {
       });
   }
 
-  // console.log(state.allQuizzes)
-
   useEffect(() => {
     initiateQuiz();
   }, []);

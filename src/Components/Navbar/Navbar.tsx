@@ -18,12 +18,6 @@ export const Navbar = () => {
         <Link to="/quizzes" className="nav-quiz">
           <li> Quiz </li>
         </Link>
-        {/* <Link to="/login" className="nav-login">
-          <li> Login </li>
-        </Link>
-        <Link to="/signup" className="nav-signup">
-          <li> Signup </li>
-        </Link> */}
       </ul>
 
       <button
